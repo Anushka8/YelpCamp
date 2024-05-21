@@ -1,6 +1,4 @@
-# ===================================================
 # FILES
-# ===================================================
 
 * package.json - metadata		(CLI : npm init)
 * app.js       - main js file
@@ -23,43 +21,46 @@ stylesheets - css files
 * middleware
 index.js - middleware functions
 
-# ===================================================
 # PROCEDURE
-# ===================================================
 
 Create package.json
 Install express framework, ejs
 Require express
 
 1. Create routes
-# / - shows the homepage
-# /campground - GET - display all available campgrounds
-#               POST - create campground	 
 
-/campground/new - loads a form to enter details of new campground
-/campground/:id - render specific campground
-/campground/:id/edit - GET - render specific campground to edit
+	a. / - shows the homepage
+
+	b. /campground - GET - display all available campgrounds
+                 	POST - create campground	 
+
+	c. /campground/new - loads a form to enter details of new campground
+
+	d. /campground/:id - render specific campground
+
+	e. /campground/:id/edit - GET - render specific campground to edit
                        PUT - display updated campground 
                  	   DELETE - destroy campground
 
 
-# /campgrounds/:id/comments/new - GET - display comments
-#                                 POST - add comment
+ 	f. /campgrounds/:id/comments/new - GET - display comments
+                                 POST - add comment
 
-/campgrounds/:id/comments/:comment_id/edit - edit specific comment
-/campgrounds/:id/comments/:comment_id - PUT - display updated comment
+	g. /campgrounds/:id/comments/:comment_id/edit - edit specific comment
+
+	h. /campgrounds/:id/comments/:comment_id - PUT - display updated comment
                                         DELETE - destroy comment
 
 	
-2. Create Database
+3. Create Database
 
-3. Authentication
+4. Authentication
 
-4. Error Handling
+5. Error Handling
 
-5. Refactoring
+6. Refactoring
 
-6. Deploying application
+7. Deploying application
 Heroku Cloud Platform
 Login to Heroku from goorm - heroku login -i
 Add required files using git 
@@ -74,9 +75,7 @@ git push heroku master (code commited on the master branch in git is pushed to h
 MongoLab - hosted database that can be connected to local database
 
 
-# ===================================================
 # NOTES
-# ===================================================
 
 In Step 1, purple routes created before creating database
 
